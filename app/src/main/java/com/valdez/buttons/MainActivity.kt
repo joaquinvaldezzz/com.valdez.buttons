@@ -36,9 +36,17 @@ class MainActivity : ComponentActivity() {
             }
         }
 
-        checkboxMale.setOnClickListener {
-            if (checkboxMale.isChecked) {
+        checkboxFemale.setOnClickListener {
+            if (checkboxFemale.isChecked) {
                 textTitle.text = "Your gender is female"
+            } else {
+                textTitle.text = "Choose your gender"
+            }
+        }
+
+        checkboxOthers.setOnClickListener {
+            if (checkboxOthers.isChecked) {
+                textTitle.text = "You prefer not to say it"
             } else {
                 textTitle.text = "Choose your gender"
             }
