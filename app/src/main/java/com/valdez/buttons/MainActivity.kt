@@ -1,5 +1,6 @@
 package com.valdez.buttons
 
+import android.annotation.SuppressLint
 import android.os.Bundle
 import android.widget.Button
 import android.widget.CheckBox
@@ -14,6 +15,7 @@ class MainActivity : ComponentActivity() {
     private lateinit var checkboxOthers: CheckBox
     private lateinit var buttonSubmit: Button
 
+    @SuppressLint("SetTextI18n")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
@@ -24,5 +26,13 @@ class MainActivity : ComponentActivity() {
         checkboxFemale = findViewById(R.id.checkbox_female)
         checkboxOthers = findViewById(R.id.checkbox_others)
         buttonSubmit = findViewById(R.id.button_submit)
+
+        checkboxMale.setOnClickListener {
+            if (checkboxMale.isChecked) {
+                textTitle.text = "Your gender is male"
+            } else {
+                textTitle.text = "Choose your gender"
+            }
+        }
     }
 }
