@@ -1,141 +1,148 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_second"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
+    android:fitsSystemWindows="true"
     tools:context=".SecondActivity">
 
-    <TextView
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Choose a color"
-        tools:ignore="HardcodedText" />
+        android:orientation="vertical"
+        android:padding="16dp">
 
-    <RadioGroup
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
-        <RadioButton
-            android:id="@+id/radiobutton_red"
+        <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:minHeight="48dp"
-            android:text="Red"
+            android:text="Choose a color"
             tools:ignore="HardcodedText" />
 
-        <RadioButton
-            android:id="@+id/radiobutton_orange"
+        <RadioGroup
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:minHeight="48dp"
-            android:text="Orange"
-            tools:ignore="HardcodedText" />
+            android:layout_height="wrap_content">
 
-        <RadioButton
-            android:id="@+id/radiobutton_amber"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:minHeight="48dp"
-            android:text="Amber"
-            tools:ignore="HardcodedText" />
+            <RadioButton
+                android:id="@+id/radiobutton_red"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="48dp"
+                android:text="Red"
+                tools:ignore="HardcodedText" />
 
-        <RadioButton
-            android:id="@+id/radiobutton_yellow"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:minHeight="48dp"
-            android:text="Yellow"
-            tools:ignore="HardcodedText" />
+            <RadioButton
+                android:id="@+id/radiobutton_orange"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="48dp"
+                android:text="Orange"
+                tools:ignore="HardcodedText" />
 
-        <RadioButton
-            android:id="@+id/radiobutton_lime"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:minHeight="48dp"
-            android:text="Lime"
-            tools:ignore="HardcodedText" />
+            <RadioButton
+                android:id="@+id/radiobutton_amber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="48dp"
+                android:text="Amber"
+                tools:ignore="HardcodedText" />
 
-        <RadioButton
-            android:id="@+id/radiobutton_green"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:minHeight="48dp"
-            android:text="Green"
-            tools:ignore="HardcodedText" />
+            <RadioButton
+                android:id="@+id/radiobutton_yellow"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="48dp"
+                android:text="Yellow"
+                tools:ignore="HardcodedText" />
 
-        <RadioButton
-            android:id="@+id/radiobutton_emerald"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:minHeight="48dp"
-            android:text="Emerald"
-            tools:ignore="HardcodedText" />
+            <RadioButton
+                android:id="@+id/radiobutton_lime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="48dp"
+                android:text="Lime"
+                tools:ignore="HardcodedText" />
 
-        <RadioButton
-            android:id="@+id/radiobutton_teal"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:minHeight="48dp"
-            android:text="Teal"
-            tools:ignore="HardcodedText" />
+            <RadioButton
+                android:id="@+id/radiobutton_green"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="48dp"
+                android:text="Green"
+                tools:ignore="HardcodedText" />
 
-        <RadioButton
-            android:id="@+id/radiobutton_cyan"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:minHeight="48dp"
-            android:text="Cyan"
-            tools:ignore="HardcodedText" />
+            <RadioButton
+                android:id="@+id/radiobutton_emerald"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="48dp"
+                android:text="Emerald"
+                tools:ignore="HardcodedText" />
 
-        <RadioButton
-            android:id="@+id/radiobutton_sky"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:minHeight="48dp"
-            android:text="Sky"
-            tools:ignore="HardcodedText" />
+            <RadioButton
+                android:id="@+id/radiobutton_teal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="48dp"
+                android:text="Teal"
+                tools:ignore="HardcodedText" />
 
-        <RadioButton
-            android:id="@+id/radiobutton_blue"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:minHeight="48dp"
-            android:text="Blue"
-            tools:ignore="HardcodedText" />
+            <RadioButton
+                android:id="@+id/radiobutton_cyan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="48dp"
+                android:text="Cyan"
+                tools:ignore="HardcodedText" />
 
-        <RadioButton
-            android:id="@+id/radiobutton_indigo"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:minHeight="48dp"
-            android:text="Indigo"
-            tools:ignore="HardcodedText" />
+            <RadioButton
+                android:id="@+id/radiobutton_sky"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="48dp"
+                android:text="Sky"
+                tools:ignore="HardcodedText" />
 
-        <RadioButton
-            android:id="@+id/radiobutton_violet"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:minHeight="48dp"
-            android:text="Violet"
-            tools:ignore="HardcodedText" />
+            <RadioButton
+                android:id="@+id/radiobutton_blue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="48dp"
+                android:text="Blue"
+                tools:ignore="HardcodedText" />
 
-        <RadioButton
-            android:id="@+id/radiobutton_purple"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:minHeight="48dp"
-            android:text="Purple"
-            tools:ignore="HardcodedText" />
+            <RadioButton
+                android:id="@+id/radiobutton_indigo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="48dp"
+                android:text="Indigo"
+                tools:ignore="HardcodedText" />
 
-        <RadioButton
-            android:id="@+id/radiobutton_fuchsia"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:minHeight="48dp"
-            android:text="Fuchsia"
-            tools:ignore="HardcodedText" />
-    </RadioGroup>
+            <RadioButton
+                android:id="@+id/radiobutton_violet"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="48dp"
+                android:text="Violet"
+                tools:ignore="HardcodedText" />
 
-</LinearLayout>
+            <RadioButton
+                android:id="@+id/radiobutton_purple"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="48dp"
+                android:text="Purple"
+                tools:ignore="HardcodedText" />
+
+            <RadioButton
+                android:id="@+id/radiobutton_fuchsia"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="48dp"
+                android:text="Fuchsia"
+                tools:ignore="HardcodedText" />
+        </RadioGroup>
+    </LinearLayout>
+</ScrollView>
+
