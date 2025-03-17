@@ -1,6 +1,7 @@
 package com.valdez.buttons
 
 import android.annotation.SuppressLint
+import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import android.widget.CheckBox
@@ -41,6 +42,11 @@ class MainActivity : ComponentActivity() {
             } else {
                 textTitle.text = "Choose your gender"
             }
+        }
+
+        buttonSubmit.setOnClickListener {
+            val intent = Intent(this, SecondActivity::class.java)
+            startActivity(intent)
         }
     }
 }
